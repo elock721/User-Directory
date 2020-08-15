@@ -5,6 +5,7 @@ import SearchInput from './components/SearchInput';
 import './App.css';
 
 class App extends Component {
+
   state = {
     users : [],
     search : ''
@@ -18,23 +19,28 @@ class App extends Component {
   }
 
   handleSearchValue = (searchValue) => {
+    this.setState({ search : searchValue });
+  }
+
+  handleReverseOrder = () => {
     this.setState({ users : [...this.state.users.reverse()] })
   }
+
 
 
 
   render() {
     return (
       <Wrapper>
-        <SearchInput handleSearchValue={this.handleSearchValue}/>
-        <EmployeeTable
-        users={this.state.users.filter(user => user.name.last.toLowerCase().includes(this.state.search))}
-        handleReverseOrder={this.handleReverseOrder}/>
-        </Wrapper>
+        <SearchInput handleSearchValue={this.handleSearchValue}/> 
+        <EmployeeTable 
+          users={this.state.users.filter(user => user.name.last.toLowerCase().includes(this.state.search))}
+          handleReverseOrder={this.handleReverseOrder}/>
+      </Wrapper> 
     );
   }
 }
 
-
-
 export default App;
+
+
