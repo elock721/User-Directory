@@ -2,24 +2,19 @@
 
 ## Description 
 
-This React JS application allows the user to sort the table by a desired category or filter the users by a 
+This React JS application allows the user to search for a specific person's name in the table or organize the table alphabetically by people's last name. To organize the table by last name, the user simply has to click on "Last Name" at the top of the last name column. The last names will toggle between A to Z and Z to A. 
 
 ## Technologies
 
 * React  
-
+* Axios
 
 ## Links
 
-Github Repo: 
+Github Repo: https://github.com/elock721/User-Directory
 
-Heroku Deployment: 
+Github Pages Deployment: https://elock721.github.io/User-Directory/
 
 ## Screenshots
 
-
-* Home Page
-![Alt text](Placeholder "Main")
-
-* To test offline
-![Alt text](Placeholder "Main")
+![Alt text](public/sreenshot.png "Main")

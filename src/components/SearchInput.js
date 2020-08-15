@@ -12,7 +12,7 @@ class SearchInput extends Component {
             this.props.handleSearchValue(this.state.input)
         })
     }
-
+    // renders search input
     render() {
         return (
             <div>

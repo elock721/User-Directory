@@ -18,10 +18,12 @@ class App extends Component {
       .catch(err => console.log(err));
   }
 
+  // produces search results 
   handleSearchValue = (searchValue) => {
     this.setState({ search : searchValue });
   }
 
+  // alphabetizes last names
   handleReverseOrder = () => {
     this.setState({ users : [...this.state.users.reverse()] })
   }
